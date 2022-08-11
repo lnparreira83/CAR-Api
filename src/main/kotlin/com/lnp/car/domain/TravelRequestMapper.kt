@@ -11,4 +11,14 @@ class TravelRequestMapper(val passengerRepository: PassengerRepository) {
             }
         return TravelRequest(passenger = passenger, origin = input.origin, destination = input.destination)
     }
+
+    fun map(travelRequest: TravelRequest): TravelRequestOutput {
+        return TravelRequestOutput(
+            id = travelRequest.id!!,
+            origin = travelRequest.origin,
+            destination = travelRequest.destination,
+            status = travelRequest.status,
+            creationDate = travelRequest.creationDate
+        )
+    }
 }
