@@ -1,4 +1,4 @@
-package com.lnp.car.interfaces
+package com.lnp.car.interfaces.incoming
 
 import com.lnp.car.domain.Passenger
 import com.lnp.car.domain.PassengerRepository

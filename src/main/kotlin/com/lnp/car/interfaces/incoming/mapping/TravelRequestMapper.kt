@@ -1,6 +1,10 @@
-package com.lnp.car.domain
+package com.lnp.car.interfaces.incoming.mapping
 
-import com.lnp.car.interfaces.PassengerAPI
+import com.lnp.car.domain.PassengerRepository
+import com.lnp.car.domain.TravelRequest
+import com.lnp.car.domain.TravelRequestInput
+import com.lnp.car.domain.TravelRequestOutput
+import com.lnp.car.interfaces.incoming.PassengerAPI
 import org.springframework.hateoas.EntityModel
 import org.springframework.hateoas.server.mvc.WebMvcLinkBuilder
 import org.springframework.http.HttpStatus

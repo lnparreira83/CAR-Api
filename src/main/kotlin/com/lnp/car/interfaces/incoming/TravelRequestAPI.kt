@@ -1,6 +1,9 @@
-package com.lnp.car.interfaces
+package com.lnp.car.interfaces.incoming
 
-import com.lnp.car.domain.*
+import com.lnp.car.domain.TravelRequestInput
+import com.lnp.car.domain.TravelRequestOutput
+import com.lnp.car.domain.TravelService
+import com.lnp.car.interfaces.incoming.mapping.TravelRequestMapper
 import org.springframework.hateoas.EntityModel
 import org.springframework.http.MediaType
 import org.springframework.stereotype.Service
@@ -27,4 +30,3 @@ class TravelRequestAPI (val travelService: TravelService, val mapper: TravelRequ
         return mapper.buildOutputModel(requests)
     }*/
 }
-
